@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html>
+  <head>
+    <title>Submit Batter v Pitcher Matchup</title>
+    <link type="text/css" rel="stylesheet" href="/elegant-aero.css" />
+  </head>
+  <body style='background-image:URL("baseball_field.jpg");background-repeat:no-repeat;background-position:center top;-webkit-background-size:100%;-moz-background-size:100%;-o-background-size:100%;background-size: 100%;'>
+    <p style="margin-bottom:5px"/>
+    <h2 class="elegant-aero" style="margin-left:30%;text-align:center;display:inline-block;color:#5E5E5E;background:#FFFFFF">&nbsp;Submit Batter vs Pitcher Matchup&nbsp;</h2>
+    <form action="/cgi-bin/jakecoll-submit-bvp.pl" style="background:#FFFFFF;width:60%;margin:auto"  method="get" class="elegant-aero">
+      <label> 
+	<span>Batter:</span> <input type="text" name="batter" value="Anthony Rizzo"/>
+      </label>
+      <label> 
+	<span>Pitcher:</span> <input type="text" name="pitcher" value="Adam Wainwright"/>
+      </label>
+      <label style="font-weight:bold;color:#5E5E5E">
+	&nbsp;&nbsp;&nbsp;&nbsp;
+	&nbsp;PA <input type="checkbox" name="PA" value="1"/>
+	AB <input type="checkbox" name="AB" value="1"/>
+	K <input type="checkbox" name="K" value="1"/>
+	BB <input type="checkbox" name="walk" value="1"/>
+	iBB <input type="checkbox" name="IW" value="1"/>
+	HBP <input type="checkbox" name="HBP" value="1"/>
+	1B <input type="checkbox" name="h1B" value="1"/>
+	2B <input type="checkbox" name="h2B" value="1"/>
+	3B <input type="checkbox" name="h3B" value="1"/>
+	HR <input type="checkbox" name="HR" value="1"/>
+      </label>
+      <label>
+	<span>&nbsp;</span><input type="submit" value="Submit">
+      </label>
+    </form>
+    <iframe frameBorder="0" name="results_iframe" style="width:100%"/>
+  </body>
+</html>
